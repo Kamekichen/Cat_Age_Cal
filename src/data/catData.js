@@ -1,7 +1,10 @@
-//Catクラスからインポート
-import Cat from "../class/cat":
+import Cat from "../class/cat";
+import readlineSync from "readline-sync"
+
+const name = readlineSync.question("名前を入力してください:");
+const age = readlineSync.question("ねこの年齢を入力してください:");
 
 // 名前と年齢の入力部分
-const cat = new Cat ("かまめし", 8, "雑種");
+const cat = new Cat (name, age);
 
-export default cat;
+export default cat
